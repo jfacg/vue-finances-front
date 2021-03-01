@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import AppToolbar from './AppToolbar.vue'
+
 export default {
   name: 'AppToolbar',
   props: {
