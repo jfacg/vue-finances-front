@@ -23,7 +23,7 @@ export default {
   }),
   computed: {
     color () {
-      return this.total > 0 ? 'error' : 'primary'
+      return this.total < 0 ? 'error' : 'primary'
     },
     totalInCurrency () {
       return this.formatCurrency(this.total)

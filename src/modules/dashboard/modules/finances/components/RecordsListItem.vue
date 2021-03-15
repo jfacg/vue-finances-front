@@ -2,12 +2,12 @@
   <v-list-item>
 
     <v-list-item-avatar>
-      <v-icon :class="[recordIconColoer(record.type), 'lighten-1 white--text']">{{ recordIcon(record.type) }}</v-icon>
+      <v-icon :class="[recordIconColor(record.type), 'lighten-1 white--text']">{{ recordIcon(record.type) }}</v-icon>
     </v-list-item-avatar>
 
     <v-list-item-content>
       <v-list-item-title>{{record.description}}</v-list-item-title>
-      <v-list-item-sub-title>{{record.category.description}}</v-list-item-sub-title>
+      <v-list-item-subtitle>{{record.category.description}}</v-list-item-subtitle>
     </v-list-item-content>
 
     <v-list-item-action>
@@ -34,8 +34,8 @@ export default {
     recordIcon (type) {
       return type === 'CREDIT' ? 'arrow_upward' : 'arrow_downward'
     },
-    recordIconColoer (type) {
-      return type === 'CREDIT' ? 'primary' : 'error'
+    recordIconColor (type) {
+      return type === 'CREDIT' ? 'primary' : 'red'
     }
 
   }
